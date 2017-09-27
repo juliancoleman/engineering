@@ -6,7 +6,7 @@
 
   </div>
   {% if page.tags != "" %}
-    <div style="display: flex; flex-wrap: wrap; width: 100vw;">
+    <div style="display: flex; flex-wrap: wrap; width: inherit;">
       {% for tag in page.tags  %}
         <div class="jlc-chip mdc-typography--caption">{{ tag }}</div>
       {% endfor %}
