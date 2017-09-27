@@ -39,6 +39,8 @@ code {
   background-color: #E0E0E0;
   display: inline-block;
   margin: 0 12px;
+  text-transform: capitalize;
+  line-height: 1;
 }
 
 @media screen and (max-width: 680px) {
