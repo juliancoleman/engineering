@@ -28,6 +28,19 @@ code {
   max-width: 1160px;
 }
 
+.jlc-chip {
+  padding: 0 12px;
+  color: rgba(0, 0, 0, 0.87);
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50% 50%;
+  background-color: #E0E0E0;
+  display: inline-block;
+  margin: 0 12px;
+}
+
 @media screen and (max-width: 680px) {
   #drawer-show-on-tablet-desktop {
     display: none;
