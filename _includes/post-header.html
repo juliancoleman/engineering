@@ -6,10 +6,10 @@
 
   </div>
   {% if page.tags != "" %}
-    {% for tag in page.tags  %}
-      <div style="display: flex; flex-wrap: wrap;">
+    <div style="display: flex; flex-wrap: wrap;">
+      {% for tag in page.tags  %}
         <div class="jlc-chip mdc-typography--caption">{{ tag }}</div>
-      </div>
-    {% endfor %}
+      {% endfor %}
+    </div>
   {% endif %}
 </div>
