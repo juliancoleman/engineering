@@ -111,6 +111,7 @@ tags: resources
           Mongoose tells us that defining a model is as easy as:
         </p>
 
+        ```js
         var Comments = new Schema({
             title     : String
           , body      : String
@@ -131,6 +132,7 @@ tags: resources
         });
 
         var Post = mongoose.model('BlogPost', BlogPost);
+        ```
 
       </div>
     </div>
