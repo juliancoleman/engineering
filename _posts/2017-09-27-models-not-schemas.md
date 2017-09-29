@@ -64,7 +64,8 @@ tags: resources
           <code>methods</code>, and <code>relations</code>. While they
           pertain to the model itself, models are really just
           <em>prototypes</em>, similar to <code>classes</code> or
-          <code>primitives</code> in JavaScript.
+          <code>primitives</code> in JavaScript. Their shape is
+          inherited and extended with each generation.
         </p>
       </div>
     </div>
@@ -79,7 +80,15 @@ tags: resources
       <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-8 mdc-layout-grid__cell--span-8-tablet">
         <p class="mdc-typography--body-1">
           Now that we've covered what a <code>Model</code> is, let's
-          switch gears to <code>Schema</code>s.
+          switch gears to <code>Schema</code>s. A schema is a set of
+          column names with their related types, and we can refer to
+          it as blueprints for a table which lay out the properties of
+          our models. These might be properties like a name, age, or
+          hair color. When you look at a human being, you are looking
+          at creation, equal in worth yet unique in the purpose he or
+          she serves. This human being has a set of attributes. Their
+          eyes tell the meaning of life. The model is the molded clay,
+          the schema is the attributes for that model.
         </p>
       </div>
     </div>
