@@ -43,6 +43,18 @@ $string: #f1fa8c;
       span.nx {
         color: $variable;
       }
+
+      span.na {
+        color: $property;
+      }
+
+      span.nb {
+        color: $variable;
+      }
+
+      span.s1 {
+        color: $string;
+      }
     }
   }
 }
