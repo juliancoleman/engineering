@@ -113,7 +113,7 @@ tags: resources
 
         ---
 
-        ```js
+        ~~~js
           var Comments = new Schema({
               title     : String
             , body      : String
@@ -134,7 +134,7 @@ tags: resources
           });
 
           var Post = mongoose.model('BlogPost', BlogPost);
-        ```
+        ~~~
       </div>
     </div>
   </div>
