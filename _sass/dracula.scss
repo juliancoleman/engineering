@@ -21,7 +21,8 @@ $string: #f1fa8c;
   margin: 0;
   background-color: $background-color;
   color: $color;
-  padding: 6px;
+  padding: 8px;
+  border-radius: 4px;
 
   & > pre {
     margin: 0;
