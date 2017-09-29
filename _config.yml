@@ -1,1 +1,7 @@
 title: jcoleman.engineering
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+highlighter: dracula
