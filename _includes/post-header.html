@@ -4,11 +4,12 @@
       {{ page.title }}
     </h1>
 
-  </div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-8">
-  {% if page.tags != "" %}
-    {% for tag in page.tags  %}
-      <div class="jlc-chip mdc-typography--caption">{{ tag }}</div>
-    {% endfor %}
-  {% endif %}
   </div>
+  {% if page.tags != "" %}
+    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-8">
+      {% for tag in page.tags  %}
+        <div class="jlc-chip mdc-typography--caption">{{ tag }}</div>
+      {% endfor %}
+    </div>
+  {% endif %}
 </div>
