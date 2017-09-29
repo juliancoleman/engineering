@@ -28,7 +28,7 @@ tags: resources
           this app ever went down, we could lose between $80,000 to
           $1.5M in a very short time. For the sake of anonymity and
           respect for those involved, I won't name the company, and
-          I'll dub the project `Purple Buddy`.
+          I'll dub the project <code>Purple Buddy</code>.
         </p>
       </div>
     </div>
