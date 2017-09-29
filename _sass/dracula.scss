@@ -50,6 +50,10 @@ $string: #f1fa8c;
 
       span.nx {
         color: $variable;
+
+        & + span.p + span.nx {
+          color: $property;
+        }
       }
 
       span.na {
