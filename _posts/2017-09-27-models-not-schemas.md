@@ -102,7 +102,36 @@ tags: resources
     <div class="mdc-layout-grid__inner" style="grid-gap: unset;">
       <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-8 mdc-layout-grid__cell--span-8-tablet">
         <p class="mdc-typography--body-1">
+          Mongoose is a MongoDB object modeling tool designed to work
+          in an asynchronous environment. Not like that last part
+          matters unless you're getting down in the nitty-gritty, but
+          this is the definition that can be found
+          <a href="http://mongoosejs.com/docs/2.7.x/">here</a>. Now,
+          as you're reading that post, we run into our first problem.
+          Mongoose tells us that defining a model is as easy as:
         </p>
+        ```js
+          var Comments = new Schema({
+              title     : String
+            , body      : String
+            , date      : Date
+          });
+
+          var BlogPost = new Schema({
+              author    : ObjectId
+            , title     : String
+            , body      : String
+            , buf       : Buffer
+            , date      : Date
+            , comments  : [Comments]
+            , meta      : {
+                votes : Number
+              , favs  : Number
+            }
+          });
+
+          var Post = mongoose.model('BlogPost', BlogPost);
+        ```
       </div>
     </div>
   </div>
