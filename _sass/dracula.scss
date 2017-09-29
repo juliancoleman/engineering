@@ -39,6 +39,10 @@ $string: #f1fa8c;
       span.kd {
         color: $keyword;
       }
+
+      span.nx {
+        color: $variable;
+      }
     }
   }
 }
