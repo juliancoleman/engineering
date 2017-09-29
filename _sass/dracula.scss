@@ -72,7 +72,7 @@ $string: #f1fa8c;
         color: $variable;
       }
 
-      span.s1 {
+      span.s1, span.s2 {
         color: $string;
       }
     }
