@@ -1,6 +1,3 @@
----
----
-
 ```js
 var Comments = new Schema({
     title     : String
