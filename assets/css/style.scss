@@ -20,11 +20,14 @@ p > code, span > code {
 
 .highlight {
   margin: 0;
-}
 
-.highlight > pre > code {
-  width: 100%;
-  font-family: monospace;
+  & > pre > code {
+    width: 100%;
+
+    & > span {
+      font-family: monospace;
+    }
+  }
 }
 
 .mdc-toolbar__row:first-child::after {
