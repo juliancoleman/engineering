@@ -23,6 +23,10 @@ $string: #f1fa8c;
   color: $color;
   padding: 6px;
 
+  & > pre {
+    margin: 0;
+  }
+
   & > pre > code {
     width: 100%;
 
