@@ -5,7 +5,7 @@
   --mdc-theme-primary: #FF9800;
 }
 
-* {
+*:not(code) {
   font-family: 'Roboto', sans-serif;
 }
 
