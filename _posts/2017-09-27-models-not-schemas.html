@@ -33,8 +33,8 @@ tags: resources
           I'll be comparing why these two are often confused and how
           to not be so confused next time you're working on a project
           where this argument arises. Our comparison will include
-          <code>MongoDB</code>, versus <code>Joi</code> and
-          <code>SQL</code>.
+          <code>MongoDB</code>, versus <code>Bookshelf</code> and
+          <code>Knex</code>.
         </p>
 
         <h2 class="mdc-typography--title mdc-theme--primary" style="font-weight: 400;">
@@ -111,7 +111,29 @@ tags: resources
           In the beginning of this project, I had made the suggestion
           to use the <a href="https://hapijs.com">Hapi</a> framework
           for our API. It even had a builtin renderer, so Express
-          wasn't a valid argument, it was just another suggestion.
+          wasn't a valid argument, it was just another suggestion. My
+          suggestion was immediately shot down without consideration
+          by both my teammate and our project manager at the time.
+          Because we had the option to build it our way, I wanted to
+          just build it properly from the start, not having to jump
+          through hoops. Our company already invested so much, and I
+          wanted to give them their money's worth.
+        </p>
+
+        <p class="mdc-typography--body-1">
+          My teammate, however, suggested using Express and MongoDB.
+          My reaction could be very closely related to that
+          <a href="https://media.giphy.com/media/qmfpjpAT2fJRK/200.gif">
+          gif of Tony Stark rolling his eyes</a>. In my defense, since
+          I had worked in Hapi so much, I had much more confidence in
+          it than I had in Express. I even went so far to make a
+          <a href="https://github.com/juliancoleman/js-hapi-api">
+          standardized API using Hapi</a>. But in my teammate's
+          defense, he only really had some experience in Express, so I
+          figured it'd be easy to roll with what he knew so that we
+          wouldn't really be wasting any time. So we decided our stack
+          would be Express, MongoDB, Mongoose, and... that's it, I
+          think.
         </p>
 
         <h2 class="mdc-typography--title mdc-theme--primary" style="font-weight: 400;">
