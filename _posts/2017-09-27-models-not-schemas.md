@@ -30,7 +30,7 @@ tags: resources
           this app ever went down, we could lose between $80,000 to
           $1.5M in a very short time. For the sake of anonymity and
           respect for those involved, I won't name the company, and
-          I'll dub the project <code>Purple Buddy</code>.
+          I'll dub the project `Purple Buddy`.
         </p>
       </div>
     </div>
@@ -66,7 +66,9 @@ tags: resources
           model can be seen superficially, as well as have some
           visceral mechanics that aren't typically seen. These are
           often represented by <code>virtuals</code>,
-          <code>methods</code>, and <code>relations</code>.
+          <code>methods</code>, and <code>relations</code>. While they
+          pertain to the model itself, models are really just
+          <em>prototypes</em>, similar <code>classes</code>
         </p>
       </div>
     </div>
