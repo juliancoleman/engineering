@@ -111,26 +111,26 @@ tags: resources
           Mongoose tells us that defining a model is as easy as:
         </p>
 
-    var Comments = new Schema({
-        title     : String
-      , body      : String
-      , date      : Date
-    });
+        var Comments = new Schema({
+            title     : String
+          , body      : String
+          , date      : Date
+        });
 
-    var BlogPost = new Schema({
-        author    : ObjectId
-      , title     : String
-      , body      : String
-      , buf       : Buffer
-      , date      : Date
-      , comments  : [Comments]
-      , meta      : {
-          votes : Number
-        , favs  : Number
-      }
-    });
+        var BlogPost = new Schema({
+            author    : ObjectId
+          , title     : String
+          , body      : String
+          , buf       : Buffer
+          , date      : Date
+          , comments  : [Comments]
+          , meta      : {
+              votes : Number
+            , favs  : Number
+          }
+        });
 
-    var Post = mongoose.model('BlogPost', BlogPost);
+        var Post = mongoose.model('BlogPost', BlogPost);
 
       </div>
     </div>
