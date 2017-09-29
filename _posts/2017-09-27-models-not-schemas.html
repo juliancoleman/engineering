@@ -111,6 +111,17 @@ var BlogPost = new Schema({
 var Post = mongoose.model('BlogPost', BlogPost);
         {% endhighlight %}
 
+        <p class="mdc-typography--body-1">
+          The first thing you may have noticed is that we are defining
+          a <code>model</code>, but we are saying <code>new Scema</code>.
+          Your first mistake may be that you're using Mongoose, but
+          that's besides the point. Finally, on the last line, we can
+          see that we're creating a <code>mongoose.model</code> with
+          the schema, <code>BlogPost</code>. The code above implies
+          that models and schemas are the same, but <em>you'd be
+          wrong.</em>
+        </p>
+
       </div>
     </div>
   </div>
