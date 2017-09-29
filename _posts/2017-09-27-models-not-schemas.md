@@ -8,7 +8,6 @@ tags: resources
 <div class="mdc-typography">
   <div class="mdc-layout-grid max-width">
     {% include post-header.html %}
-
     <div class="mdc-layout-grid__inner" style="grid-gap: unset;">
       <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
         <h2 class="mdc-typography--headline mdc-theme--primary" style="font-weight: 400;">
@@ -16,7 +15,6 @@ tags: resources
         </h2>
       </div>
     </div>
-
     <div class="mdc-layout-grid__inner" style="grid-gap: unset;">
       <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-8 mdc-layout-grid__cell--span-8-tablet">
         <p class="mdc-typography--body-1">
@@ -34,7 +32,6 @@ tags: resources
         </p>
       </div>
     </div>
-
     <div class="mdc-layout-grid__inner" style="grid-gap: unset;">
       <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-8 mdc-layout-grid__cell--span-8-tablet">
         <p class="mdc-typography--body-1">
@@ -46,7 +43,6 @@ tags: resources
         </p>
       </div>
     </div>
-
     <div class="mdc-layout-grid__inner" style="grid-gap: unset;">
       <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
         <h2 class="mdc-typography--title mdc-theme--primary" style="font-weight: 400;">
@@ -54,7 +50,6 @@ tags: resources
         </h2>
       </div>
     </div>
-
     <div class="mdc-layout-grid__inner" style="grid-gap: unset;">
       <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-8 mdc-layout-grid__cell--span-8-tablet">
         <p class="mdc-typography--body-1">
@@ -72,7 +67,6 @@ tags: resources
         </p>
       </div>
     </div>
-
     <div class="mdc-layout-grid__inner" style="grid-gap: unset;">
       <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
         <h2 class="mdc-typography--title mdc-theme--primary" style="font-weight: 400;">
@@ -80,7 +74,6 @@ tags: resources
         </h2>
       </div>
     </div>
-
     <div class="mdc-layout-grid__inner" style="grid-gap: unset;">
       <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-8 mdc-layout-grid__cell--span-8-tablet">
         <p class="mdc-typography--body-1">
@@ -89,7 +82,6 @@ tags: resources
         </p>
       </div>
     </div>
-
     <div class="mdc-layout-grid__inner" style="grid-gap: unset;">
       <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
         <h2 class="mdc-typography--title mdc-theme--primary" style="font-weight: 400;">
@@ -97,7 +89,6 @@ tags: resources
         </h2>
       </div>
     </div>
-
     <div class="mdc-layout-grid__inner" style="grid-gap: unset;">
       <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-8 mdc-layout-grid__cell--span-8-tablet">
         <p class="mdc-typography--body-1">
