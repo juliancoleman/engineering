@@ -7,6 +7,7 @@
 */
 
 $background-color: #282a36;
+$color: #f8f8f2;
 $keyword: #ff79c6;
 $operator: #ff79c6;
 $atom: #bd93f9;
@@ -19,6 +20,7 @@ $string: #f1fa8c;
 .highlight {
   margin: 0;
   background-color: $background-color;
+  color: $color;
 
   & > pre > code {
     width: 100%;
