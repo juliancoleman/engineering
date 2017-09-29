@@ -8,6 +8,7 @@
 
 $background-color: #282a36;
 $color: #f8f8f2;
+$comment: #6272a4;
 $keyword: #ff79c6;
 $operator: #ff79c6;
 $atom: #bd93f9;
@@ -36,11 +37,18 @@ $string: #f1fa8c;
     }
 
     &[data-lang="javascript"] {
-      span.kd {
-        color: $keyword;
+      span.cl {
+        color: $comment;
       }
 
       span.k {
+        color: $keyword;
+      }
+
+      span.kd {
+        color: $keyword;
+      }
+      span.kr {
         color: $keyword;
       }
 
