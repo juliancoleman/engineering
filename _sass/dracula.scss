@@ -37,7 +37,7 @@ $string: #f1fa8c;
     }
 
     &[data-lang="javascript"] {
-      span.cl {
+      span.c1 {
         color: $comment;
       }
 
@@ -62,10 +62,6 @@ $string: #f1fa8c;
 
       span.nx {
         color: $variable;
-
-        & + span.p + span.nx {
-          color: $property;
-        }
       }
 
       span.na {
