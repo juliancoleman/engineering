@@ -18,10 +18,10 @@ $string: #f1fa8c;
 
 .highlight {
   margin: 0;
+  background-color: $background-color;
 
   & > pre > code {
     width: 100%;
-    background-color: $background-color;
 
     & > span {
       font-family: monospace;
