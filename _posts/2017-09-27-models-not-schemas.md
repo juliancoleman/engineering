@@ -5,7 +5,7 @@ permalink: /:year/:month/:day/:title
 tags: resources
 ---
 
-<div class="mdc-typography">
+<div class="mdc-typography" markdown="1">
   <div class="mdc-layout-grid max-width">
     {% include post-header.html %}
     <div class="mdc-layout-grid__inner" style="grid-gap: unset;">
@@ -111,28 +111,27 @@ tags: resources
           Mongoose tells us that defining a model is as easy as:
         </p>
 
-        ~~~js
-          var Comments = new Schema({
-              title     : String
-            , body      : String
-            , date      : Date
-          });
+    var Comments = new Schema({
+        title     : String
+      , body      : String
+      , date      : Date
+    });
 
-          var BlogPost = new Schema({
-              author    : ObjectId
-            , title     : String
-            , body      : String
-            , buf       : Buffer
-            , date      : Date
-            , comments  : [Comments]
-            , meta      : {
-                votes : Number
-              , favs  : Number
-            }
-          });
+    var BlogPost = new Schema({
+        author    : ObjectId
+      , title     : String
+      , body      : String
+      , buf       : Buffer
+      , date      : Date
+      , comments  : [Comments]
+      , meta      : {
+          votes : Number
+        , favs  : Number
+      }
+    });
 
-          var Post = mongoose.model('BlogPost', BlogPost);
-        ~~~
+    var Post = mongoose.model('BlogPost', BlogPost);
+
       </div>
     </div>
   </div>
