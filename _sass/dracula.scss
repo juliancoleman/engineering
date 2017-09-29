@@ -24,6 +24,7 @@ $string: #f1fa8c;
   color: $color;
   padding: 8px;
   border-radius: 6px;
+  overflow: scroll;
 
   & > pre {
     margin: 0;
