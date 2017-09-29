@@ -20,6 +20,10 @@ p > code, span > code {
   background-color: #eee;
 }
 
+a {
+  color: var(--mdc-theme-primary);
+}
+
 .mdc-toolbar__row:first-child::after {
   background-image: url("{{ site.baseUrl }}/assets/images/true_is_true_return_true.png");
   background-size: cover;
