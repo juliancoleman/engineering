@@ -113,13 +113,24 @@ var Post = mongoose.model('BlogPost', BlogPost);
 
         <p class="mdc-typography--body-1">
           The first thing you may have noticed is that we are defining
-          a <code>model</code>, but we are saying <code>new Scema</code>.
+          a <code>model</code>, but we are saying <code>new Schema</code>.
           Your first mistake may be that you're using Mongoose, but
           that's besides the point. Finally, on the last line, we can
           see that we're creating a <code>mongoose.model</code> with
           the schema, <code>BlogPost</code>. The code above implies
           that models and schemas are the same, but <em>you'd be
           wrong.</em>
+        </p>
+
+        <p class="mdc-typography--body-1">
+          I worked on <em>Purple Buddy</em> with one other person;
+          together, we made up a team. We had no scope of work, but we
+          did have an idea of what the app was supposed to do: to
+          authenticate different types of admin users, and show
+          sidebar items based on their role, and redirect to a
+          <code>403</code> page if they didn't possess the proper role
+          to access that route. The rest of the operations were simple
+          CRUD, which I won't get into much detail on.
         </p>
 
       </div>
