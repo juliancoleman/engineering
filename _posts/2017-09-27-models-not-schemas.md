@@ -59,13 +59,13 @@ tags: resources
           curves and edges, personality, and a shape. It has
           <em>structure.</em> Everything that can be known about the
           model can be seen superficially, as well as have some
-          visceral mechanics that aren't typically seen. These are
-          often represented by <code>virtuals</code>,
-          <code>methods</code>, and <code>relations</code>. While they
-          pertain to the model itself, models are really just
-          <em>prototypes</em>, similar to <code>classes</code> or
-          <code>primitives</code> in JavaScript. Their shape is
-          inherited and extended with each generation.
+          visceral mechanics that aren't seen. These are often
+          represented by <code>virtuals</code>, <code>methods</code>,
+          and <code>relations</code>. While they pertain to the model
+          itself, models are really just <em>prototypes</em>, similar
+          to <code>classes</code> or <code>primitives</code> in
+          JavaScript. Their shape is inherited and extended with each
+          generation.
         </p>
       </div>
     </div>
@@ -81,7 +81,7 @@ tags: resources
         <p class="mdc-typography--body-1">
           Now that we've covered what a <code>Model</code> is, let's
           switch gears to <code>Schema</code>s. A schema is a set of
-          column names with their related types, and we can refer to
+          column names with their associated types, and we can refer to
           it as blueprints for a table which lay out the properties of
           our models. These might be properties like a name, age, or
           hair color. When you look at a human being, you are looking
