@@ -37,7 +37,7 @@ tags: resources
         <p class="mdc-typography--body-1">
           I'll be comparing why these two are often confused and how
           to not be so confused next time you're working on a project
-          that this argument arises. Our first candidate is
+          where this argument arises. Our comparison will include
           <code>MongoDB</code>, versus <code>Joi</code> and
           <code>SQL</code>.
         </p>
