@@ -115,6 +115,8 @@ tags: resources
   </div>
 </div>
 
+---
+
 ```js
   var Comments = new Schema({
       title     : String
