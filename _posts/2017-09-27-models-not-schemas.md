@@ -112,6 +112,9 @@ tags: resources
         </p>
       </div>
     </div>
+  </div>
+</div>
+
 ```js
   var Comments = new Schema({
       title     : String
@@ -134,5 +137,3 @@ tags: resources
 
   var Post = mongoose.model('BlogPost', BlogPost);
 ```
-  </div>
-</div>
