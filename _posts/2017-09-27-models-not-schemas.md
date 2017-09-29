@@ -63,7 +63,8 @@ tags: resources
           often represented by <code>virtuals</code>,
           <code>methods</code>, and <code>relations</code>. While they
           pertain to the model itself, models are really just
-          <em>prototypes</em>, similar <code>classes</code>
+          <em>prototypes</em>, similar to <code>classes</code> or
+          <code>primitives</code> in JavaScript.
         </p>
       </div>
     </div>
