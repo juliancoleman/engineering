@@ -1,0 +1,36 @@
+/**
+ * Dracula theme for Rouge highlighter
+ * based on the Ramda REPL
+ * https://ramdajs.com/repl/
+ *
+ * Created by Julian Coleman
+*/
+
+$background-color: #282a36;
+$keyword: #ff79c6;
+$operator: #ff79c6;
+$atom: #bd93f9;
+$number: #bd93f9;
+$variable: #50fa7b;
+$variable-2: #fff;
+$property: #66d9ef;
+$string: #f1fa8c;
+
+.highlight {
+  margin: 0;
+
+  & > pre > code {
+    width: 100%;
+    background-color: $background-color;
+
+    & > span {
+      font-family: monospace;
+    }
+
+    &[data-lang="javascript"] {
+      span.kd {
+        color: $keyword;
+      }
+    }
+  }
+}
