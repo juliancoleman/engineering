@@ -150,7 +150,7 @@ tags: resources
           Mongoose tells us that defining a model is as easy as:
         </p>
 
-        {% highlight javascript %}
+{% highlight javascript %}
 var Comments = new Schema({
     title     : String
   , body      : String
@@ -171,7 +171,7 @@ var BlogPost = new Schema({
 });
 
 var Post = mongoose.model('BlogPost', BlogPost);
-        {% endhighlight %}
+{% endhighlight %}
 
         <p class="mdc-typography--body-1">
           The first thing you may have noticed is that we are defining
@@ -182,6 +182,111 @@ var Post = mongoose.model('BlogPost', BlogPost);
           the schema, <code>BlogPost</code>. The code above implies
           that models and schemas are the same, but <em>you'd be
           wrong.</em>
+        </p>
+
+        <h2 class="mdc-typography--title mdc-theme--primary" style="font-weight: 400;">
+          Bookshelf and Knex
+        </h2>
+
+        <p class="mdc-typography--body-1">
+          It's actually very funny how unpopular these two libraries
+          are. Knex is a kind-of port from the Laravel library called
+          the <i>Laravel Query Builder</i>. It allows users to build
+          complex queries in JavaScript, which translate to raw SQL.
+          The benefit of using this library is that you don't have to
+          have a bunch of SQL files in your project. You can just have
+          your configuration and migrations and you're done.
+        </p>
+
+        <p class="mdc-typography--body-1">
+          Bookshelf is a SQL ORM for NodeJS. We will be using
+          Bookshelf to not only set up a connection to our database,
+          but we will also use it for our <code>Model</code>s.
+          Consider the following code to define our models.
+        </p>
+
+{% highlight javascript %}
+// models.js
+
+const BaseModel = Bookshelf.Model.extend({
+  hasTimeStamps: true,
+  softDelete: true,
+  initialize(...args) {
+    // some sample code
+  },
+  parse(attrs) {
+    // some sample code
+  },
+  format(attrs) {
+    // some sample code
+  },
+  fetch(options) {
+    // some sample code
+  },
+  destroy(options) {
+    // some sample code
+  }
+});
+
+const UserModel = Bookshelf.model("User", BaseModel.extend({
+  tableName: "users",
+  customError: UserNotFoundError,
+  virtuals: {
+    groupMembers() {
+      // some sample code
+    }
+  }
+  authorize(user) {
+    // some sample code
+  },
+  roles() {
+    return this.hasMany("Role");
+  },
+}));
+{% endhighlight %}
+
+        <p class="mdc-typography--body-1">
+          Next, we will define our <code>schema</code>.
+        </p>
+
+{% highlight javascript %}
+// 20170907091929_create_users.js
+
+exports.up = knex =>
+  knex.schema.createTable("users", (table) => {
+    table.increments();
+    table.string("email_address");
+    table.string("password");
+    table.timestamps();
+    table.timestamp("deleted_at");
+  });
+
+exports.down = knex =>
+  knex.schema.dropTable("users");
+{% endhighlight %}
+
+        <p class="mdc-typography--body-1">
+          As you can see by the two snippets above, there is a great
+          separation of concern between what a <code>schema</code> is,
+          and what a <code>model</code> is. The schema is the design
+          of the table, and their associated value types; the model is
+          the core functionality of the table it belongs to, as well
+          as custom methods, relations, virtuals, etc. This separation
+          caused a great many arguments between my teammate and myself,
+          that of which I'm not proud of. If you're on a team, you
+          should always be willing to sacrifice. And if you feel like
+          your way is better, make your case, and the rest of your
+          team should have the willingness to listen and learn.
+        </p>
+
+        <h2 class="mdc-typography--title mdc-theme--primary" style="font-weight: 400;">
+          Conclusion
+        </h2>
+
+        <p class="mdc-typography--body-1">
+          In this post, I evaluated the differences between models and
+          schemas. Models can be described as the <em>prototype</em>,
+          whereas schemas can be described as a model's attributes.
         </p>
       </div>
     </div>
