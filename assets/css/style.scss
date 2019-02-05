@@ -25,6 +25,10 @@ header {
     text-transform: uppercase;
     transition: color 0.2s ease-out;
 
+    &:hover {
+      color: #000;
+    }
+
     &:not(:last-of-type) {
       margin-right: 12px;
     }
