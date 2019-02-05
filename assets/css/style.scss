@@ -17,11 +17,13 @@ header {
   font-size: 13px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 24px;
 
   a {
     color: #393333;
     text-transform: uppercase;
+    transition: color 0.2s ease-out;
 
     &:not(:last-of-type) {
       margin-right: 12px;
