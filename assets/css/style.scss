@@ -40,3 +40,28 @@ header {
     }
   }
 }
+
+.hero {
+  background-image: url("https://images.unsplash.com/photo-1528523895838-7c754cd7f408");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+
+  .info {
+    position: absolute;
+    bottom: 0;
+
+    .title {
+      text-transform: uppercase;
+
+      .name {
+        font-weight: 500;
+      }
+    }
+
+    .subtitle {
+      opacity: 0.7;
+    }
+  }
+}
