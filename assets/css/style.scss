@@ -25,10 +25,17 @@ a {
 }
 
 #intro {
+  font-family: "Raleway";
   text-align: center;
+  text-transform: uppercase;
 
   #me {
     font-size: 48px;
+  }
+
+  #blurb {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
   }
 }
 
