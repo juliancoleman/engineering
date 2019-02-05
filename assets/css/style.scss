@@ -14,10 +14,16 @@ a {
 }
 
 header {
+  font-size: 14px;
   display: flex;
   justify-content: space-between;
-}
+  padding: 12px 16px;
 
-header img {
-  height: 24px;
+  a {
+    color: #393333;
+
+    img {
+      height: 24px;
+    }
+  }
 }
