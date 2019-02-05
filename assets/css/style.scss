@@ -3,6 +3,10 @@
 
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700|Raleway");
 
+* {
+  box-sizing: border-box;
+}
+
 body, main, figure {
   font-family: "Lato";
   margin: 0;
