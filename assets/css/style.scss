@@ -66,13 +66,14 @@ header {
     text-transform: uppercase;
 
     .title {
+      font-size: 10px;
+
       .name {
         font-weight: 700;
       }
 
       .author {
         font-weight: 300;
-        font-size: 10px;
       }
     }
 
