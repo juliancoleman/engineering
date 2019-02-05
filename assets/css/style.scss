@@ -22,11 +22,13 @@ header {
 
   a {
     color: #393333;
+    opacity: 0.8;
     text-transform: uppercase;
     transition: color 0.2s ease-out;
 
     &:hover {
       color: #000;
+      opacity: 1;
     }
 
     &:not(:last-of-type) {
