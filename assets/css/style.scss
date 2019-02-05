@@ -14,7 +14,7 @@ a {
 }
 
 header {
-  font-size: 14px;
+  font-size: 13px;
   display: flex;
   justify-content: space-between;
   padding: 12px 16px;
@@ -22,6 +22,10 @@ header {
   a {
     color: #393333;
     text-transform: uppercase;
+
+    &:not(:last-of-type) {
+      margin-right: 12px;
+    }
 
     i {
       font-size: 18px;
