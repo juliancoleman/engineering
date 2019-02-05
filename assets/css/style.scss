@@ -63,10 +63,9 @@ header {
     position: absolute;
     bottom: 0;
     padding: 24px;
+    text-transform: uppercase;
 
     .title {
-      text-transform: uppercase;
-
       .name {
         font-weight: 700;
       }
