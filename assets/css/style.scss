@@ -50,7 +50,7 @@ header {
 }
 
 .hero {
-  background-image: url("https://images.unsplash.com/photo-1528523895838-7c754cd7f408");
+  background-image: url("{{ site.hero_banner_url }}");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -79,6 +79,11 @@ header {
 
     .subtitle {
       opacity: 0.7;
+
+      &::before {
+        font-family: "Font Awesome 5 Free";
+        content: "\f041"
+      }
     }
   }
 }
