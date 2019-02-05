@@ -62,9 +62,11 @@ header {
     font-size: 12px;
     position: absolute;
     bottom: 0;
-    padding: 24px;
+    left: 0;
+    right: 0;
+    padding:  18px 24px;
     text-transform: uppercase;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, .85));
+    background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, .65));
 
     .title {
       font-size: 10px;
