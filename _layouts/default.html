@@ -1,96 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
 
-  <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <title>{{ site.title }}</title>
+  </head>
 
-  <title>{{ site.title }}</title>
-</head>
+  <body>
+    {% include header.html %}
 
-<body style="display: flex; flex-direction: column; padding: 0; margin: 0; box-sizing: border-box; min-height: 100vh;">
-  <header class="mdc-toolbar mdc-toolbar--fixed mdc-toolbar--waterfall mdc-toolbar--flexible mdc-toolbar--flexible-default-behavior mdc-toolbar--flexible-space-maximized">
-    <div class="mdc-toolbar__row" style="height: 256px;">
-      <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
-        <button class="demo-menu material-icons mdc-toolbar__icon--menu">menu</button>
-        <span class="mdc-toolbar__title">
-          <a href="http://jcoleman.engineering" style="color: white; text-decoration: none;">
-            jcoleman
-            <span class="mdc-typography--button" style="font-weight: 400; line-height: inherit">engineering</span>
-          </a>
-        </span>
-      </section>
-    </div>
-  </header>
-
-  <aside id="drawer-show-on-mobile" class="mdc-temporary-drawer">
-    <nav class="mdc-temporary-drawer__drawer">
-      <nav class="mdc-list-group">
-        <div class="mdc-list">
-          <a href="http://jcoleman.io" class="mdc-list-item">.io</a>
-        </div>
-        <div class="mdc-list-divider"></div>
-        <div class="mdc-list">
-          {% for post in site.posts %}
-            <a href="{{ post.url }}" class="mdc-list-item">{{ post.title }}</a>
-          {% endfor %}
-        </div>
-      </nav>
-    </nav>
-  </aside>
-
-  <main class="mdc-toolbar-fixed-adjust" style="display: flex; flex: 1 1 auto; height: 100%; box-sizing: border-box; border-bottom: 1px solid #e4e4e4;">
-    <nav id="drawer-show-on-tablet-desktop" class="mdc-permanent-drawer">
-      <div class="mdc-list-group">
-        <nav class="mdc-list">
-          <a href="http://jcoleman.io" class="mdc-list-item">.io</a>
-        </nav>
-        <div class="mdc-list-divider"></div>
-        <nav class="mdc-list">
-          {% for post in site.posts %}
-            <a href="{{ post.url }}" class="mdc-list-item">{{ post.title }}</a>
-          {% endfor %}
-        </nav>
-      </div>
-    </nav>
-
-    <div style="margin: 0 auto; width: 100%;">
+    <main>
       {{ content }}
-    </div>
-  </main>
+    </main>
 
-  {% include footer.html %}
-
-  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
-  <script>
-    (function () {
-      var pollId = 0;
-      var drawerEl = document.querySelector('.mdc-temporary-drawer');
-      var MDCTemporaryDrawer = mdc.drawer.MDCTemporaryDrawer;
-      var drawer = new MDCTemporaryDrawer(drawerEl);
-
-      document.querySelector('.demo-menu').addEventListener('click', function () {
-        drawer.open = true;
-      });
-
-      pollId = setInterval(function () {
-        var pos = getComputedStyle(document.querySelector('.mdc-toolbar')).position;
-        if (pos === 'fixed' || pos === 'relative') {
-          init();
-          clearInterval(pollId);
-        }
-      }, 250);
-      function init() {
-        var toolbar = mdc.toolbar.MDCToolbar.attachTo(document.querySelector('.mdc-toolbar'));
-        toolbar.fixedAdjustElement = document.querySelector('.mdc-toolbar-fixed-adjust');
-      }
-    })();
-  </script>
-</body>
+    {% include footer.html %}
+  </body>
 
 </html>
