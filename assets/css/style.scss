@@ -13,16 +13,24 @@ a {
   text-decoration: none;
 }
 
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
 header {
   font-size: 13px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 36px 56px;
+  padding: 24px;
   position: fixed;
   left: 0;
   right: 0;
   z-index: 99;
+
+  & .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
   a {
     color: #393333;
