@@ -203,6 +203,9 @@ footer {
 
   .social-icons {
     margin-top: 12px;
-    font-size: 24px;
+
+    .icon {
+      font-size: 24px;
+    }
   }
 }
