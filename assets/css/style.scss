@@ -147,18 +147,25 @@ header {
   height: 50vh;
 }
 
-.grid-container {
-  display: grid;
-  grid-gap: 18px;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto;
+.flex-container {
+  display: flex;
 
-  .card {
-    padding: 12px;
-    background: #fff;
+  .flex-column {
+    flex: 1;
+
+    &:first-of-type {
+      margin-right: 18px;
+    }
+
+    .card {
+      margin-bottom: 18px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
-
 
 footer {
   text-transform: uppercase;
