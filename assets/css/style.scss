@@ -193,7 +193,11 @@ footer {
     display: block;
   }
 
-  nav a:not(:last-of-type) {
+  header nav {
+    text-align: center;
+  }
+
+  header nav a:not(:last-of-type) {
     margin-right: 12px;
   }
 }
