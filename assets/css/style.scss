@@ -116,6 +116,22 @@ header {
 
     .title {
       font-size: 10px;
+
+      a {
+        color: #dfdfdf;
+        opacity: 0.8;
+        text-transform: uppercase;
+        border-bottom: 1px solid transparent;
+        transition: color 0.2s ease-out,
+                    opacity 0.2s ease-out,
+                    border-color 0.2s ease-out;
+
+        &:hover {
+          color: #fff;
+          opacity: 1;
+          border-color: #fff !important;
+        }
+      }
     }
   }
 }
