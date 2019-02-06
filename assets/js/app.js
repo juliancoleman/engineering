@@ -1,5 +1,5 @@
 window.onscroll = handleScroll;
 
 function handleScroll() {
-  console.log(window.height);
+  console.log(window.innerHeight);
 }
