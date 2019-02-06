@@ -161,7 +161,7 @@ footer {
     justify-content: center;
 
     a {
-      color: #dfdfdf;
+      color: #393333;
       opacity: 0.8;
       text-transform: uppercase;
       border-bottom: 1px solid transparent;
@@ -170,9 +170,9 @@ footer {
                   border-color 0.2s ease-out;
 
       &:hover {
-        color: #fff;
+        color: #000;
         opacity: 1;
-        border-color: #fff !important;
+        border-color: #000 !important;
       }
 
       &:not(:last-of-type) {
