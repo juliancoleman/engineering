@@ -150,6 +150,8 @@ header {
 .grid-container {
   display: grid;
   grid-gap: 12px;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
 
   .card {
     padding: 12px;
