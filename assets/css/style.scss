@@ -90,7 +90,7 @@ header {
   justify-content: center;
   align-items: center;
 
-  background-image: url("{{ site.hero_banner_url }}");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("{{ site.hero_banner_url }}");
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: cover;
