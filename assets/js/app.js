@@ -18,5 +18,9 @@ function handleScroll() {
     headerAnchors.forEach((anchor) => {
       anchor.classList.replace("light", "dark");
     });
+  } else {
+    headerAnchors.forEach((anchor) => {
+      anchor.classList.replace("dark", "light");
+    });
   }
 }
