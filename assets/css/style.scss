@@ -16,9 +16,41 @@ body, main, figure {
 
 a {
   text-decoration: none;
+  opacity: 0.8;
+  text-transform: uppercase;
+  border-bottom: 1px solid transparent;
+  transition: color 0.2s ease-out,
+  opacity 0.2s ease-out,
+  border-color 0.2s ease-out;
+
+  &.light {
+    color: #dfdfdf;
+
+    &:hover {
+      color: #fff;
+      border-color: #fff !important;
+    }
+  }
+
+  &.dark {
+    color: #393333;
+
+    &:hover {
+      color: #000;
+      border-color: #000;
+    }
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:not(:last-of-type) {
+    margin-right: 18px;
+  }
 }
 
-#contact {
+.contact {
   border: 1px solid #dfdfdf;
   border-radius: 2px;
   display: inline-block;
@@ -63,28 +95,8 @@ header {
     align-items: center;
   }
 
-  a {
-    color: #dfdfdf;
-    opacity: 0.8;
-    text-transform: uppercase;
-    border-bottom: 1px solid transparent;
-    transition: color 0.2s ease-out,
-                opacity 0.2s ease-out,
-                border-color 0.2s ease-out;
-
-    &:hover {
-      color: #fff;
-      opacity: 1;
-      border-color: #fff !important;
-    }
-
-    &:not(:last-of-type) {
-      margin-right: 18px;
-    }
-
-    &.icon {
-      font-size: 18px;
-    }
+  a.icon {
+    font-size: 18px;
   }
 }
 
