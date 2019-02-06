@@ -178,6 +178,10 @@ footer {
 }
 
 @media (max-width: 767px) {
+  header {
+    margin: 8px;
+  }
+
   header .container {
     display: block;
   }
