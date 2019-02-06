@@ -179,6 +179,15 @@ header {
       padding: 24px;
       background: #fff;
       margin-bottom: 24px;
+
+      & .icon-container i {
+        font-size: 36px;
+      }
+
+      & .card-title {
+        font-family: "Raleway";
+        font-size: 36px;
+      }
     }
 
     &:last-child {
