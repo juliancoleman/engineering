@@ -187,3 +187,13 @@ footer {
     font-size: 10px;
   }
 }
+
+@media (max-width: 767px) {
+  header .container {
+    display: block;
+  }
+
+  nav a:not(:last-of-type) {
+    margin-right: 12px;
+  }
+}
