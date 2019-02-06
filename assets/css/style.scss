@@ -172,13 +172,13 @@ header {
     flex: 1;
 
     &:first-of-type {
-      margin-right: 18px;
+      margin-right: 16px;
     }
 
     .card {
       padding: 34px 40px 44px;
       background: #fff;
-      margin-bottom: 24px;
+      margin-bottom: 16px;
 
       & .icon-container svg {
         font-size: 36px;
@@ -187,6 +187,7 @@ header {
       & .card-title {
         font-family: "Raleway";
         font-size: 24px;
+        font-weight: 300;
       }
     }
 
