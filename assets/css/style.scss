@@ -155,8 +155,16 @@ footer {
   text-align: center;
 
   nav {
-    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+
+    a {
+      color: #393333;
+
+      &:not(:last-of-type) {
+        margin-right: 18px;
+      }
+    }
   }
 }
