@@ -160,25 +160,25 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+  }
 
-    a {
-      color: #393333;
-      opacity: 0.8;
-      text-transform: uppercase;
-      border-bottom: 1px solid transparent;
-      transition: color 0.2s ease-out,
-                  opacity 0.2s ease-out,
-                  border-color 0.2s ease-out;
+  a {
+    color: #393333;
+    opacity: 0.8;
+    text-transform: uppercase;
+    border-bottom: 1px solid transparent;
+    transition: color 0.2s ease-out,
+                opacity 0.2s ease-out,
+                border-color 0.2s ease-out;
 
-      &:hover {
-        color: #000;
-        opacity: 1;
-        border-color: #000 !important;
-      }
+    &:hover {
+      color: #000;
+      opacity: 1;
+      border-color: #000 !important;
+    }
 
-      &:not(:last-of-type) {
-        margin-right: 18px;
-      }
+    &:not(:last-of-type) {
+      margin-right: 18px;
     }
   }
 
