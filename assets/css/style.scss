@@ -94,7 +94,7 @@ header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
                     url("{{ site.hero_banner_url }}");
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center 75%;
   background-size: cover;
 
   width: 100%;
