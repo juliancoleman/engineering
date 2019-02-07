@@ -23,6 +23,7 @@ body, main, figure {
   font-family: "Raleway";
 
   &::before {
+    height: 1px;
     border-top: 1px solid #393333;
   }
 
