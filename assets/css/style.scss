@@ -340,7 +340,7 @@ footer {
   }
 
   .about-body {
-    grid-gap: 0;
+    grid-gap: 0 !important;
     grid-template-columns: auto !important;
   }
 }
