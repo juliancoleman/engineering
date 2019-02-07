@@ -14,7 +14,7 @@ function handleScroll() {
 
   header.style.background = `rgba(255, 255, 255, ${offsetPercentage})`;
 
-  if (offsetPercentage > 0.5) {
+  if (offsetPercentage > 1) {
     headerAnchors.forEach((anchor) => {
       anchor.classList.replace("light", "dark");
     });
