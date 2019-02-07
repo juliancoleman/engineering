@@ -339,6 +339,10 @@ footer {
     }
   }
 
+  .bible-verse::before {
+    display: none;
+  }
+
   .about-body {
     grid-gap: 0 !important;
     grid-template-columns: auto !important;
