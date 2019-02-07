@@ -14,6 +14,16 @@ body, main, figure {
   background: #f2f2f2;
 }
 
+.bible-verse {
+  padding: 24px;
+  font-size: 13px;
+
+  p {
+    line-height: 24px;
+    font-style: italic;
+  }
+}
+
 
 .contact {
   border: 1px solid #dfdfdf;
