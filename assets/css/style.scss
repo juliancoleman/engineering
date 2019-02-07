@@ -119,6 +119,10 @@ a {
 .container {
   max-width: 1240px;
   margin: 0 auto;
+
+  & .section-header {
+    font-family: "Raleway";
+  }
 }
 
 header {
