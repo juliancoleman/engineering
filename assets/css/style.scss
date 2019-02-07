@@ -339,8 +339,16 @@ footer {
     }
   }
 
-  .bible-verse::before {
-    display: none;
+  .bible-verse {
+    &::before {
+      display: none;
+    }
+
+    p {
+      padding: initial;
+      margin: initial;
+      width: auto;
+    }
   }
 
   .about-body {
