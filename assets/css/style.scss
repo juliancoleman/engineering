@@ -253,4 +253,16 @@ footer {
       font-size: 24px;
     }
   }
+
+  .flex-container {
+    flex-direction: column;
+
+    .flex-column {
+      margin: 0;
+
+      .card {
+        margin: 0;
+      }
+    }
+  }
 }
