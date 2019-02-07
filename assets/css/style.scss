@@ -286,6 +286,10 @@ footer {
     margin-bottom: 36px;
   }
 
+  .social-icons {
+    display: none;
+  }
+
   .copyright {
     font-size: 10px;
   }
@@ -309,10 +313,18 @@ footer {
     margin-right: 12px;
   }
 
+  header .social-icons {
+    display: none;
+  }
+
   footer {
     margin-left: 8px;
     margin-right: 8px;
     padding-top: 32px;
+
+    & .social-icons {
+      display: inline-block;
+    }
   }
 
   .social-icons {
