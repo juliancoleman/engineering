@@ -15,8 +15,10 @@ body, main, figure {
 }
 
 .bible-verse {
-  padding: 24px;
   font-size: 13px;
+  max-width: 767px;
+  padding: 24px;
+  text-align: center;
 
   p {
     line-height: 24px;
