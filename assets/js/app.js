@@ -9,7 +9,7 @@ window.onscroll = handleScroll;
 
 function handleScroll() {
   var currentScrollPosition = window.scrollY;
-  var windowHeight = window.innerHeight;
+  var windowHeight = window.innerHeight / 2;
   var offsetPercentage = currentScrollPosition / windowHeight;
 
   header.style.background = `rgba(255, 255, 255, ${offsetPercentage})`;
