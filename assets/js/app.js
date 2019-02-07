@@ -14,17 +14,19 @@ function handleScroll() {
 
   header.style.background = `rgba(255, 255, 255, ${offsetPercentage})`;
 
-  if (offsetPercentage > 1) {
+  if (offsetPercentage > 0.75) {
     headerAnchors.forEach((anchor) => {
       anchor.classList.replace("light", "dark");
     });
-
-    header.classList.add("shadow");
   } else {
     headerAnchors.forEach((anchor) => {
       anchor.classList.replace("dark", "light");
     });
+  }
 
+  if (offsetPercentage > 1) {
+    header.classList.add("shadow");
+  } else {
     header.classList.remove("shadow");
   }
 }
