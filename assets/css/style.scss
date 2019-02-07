@@ -125,7 +125,13 @@ a {
   }
 
   & .section-header {
+    color: #393333;
     font-family: "Raleway";
+  }
+
+  & .about-paragraph {
+    font-size: 13px;
+    line-height: 24px;
   }
 }
 
