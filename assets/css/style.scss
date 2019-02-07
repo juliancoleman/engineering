@@ -127,6 +127,10 @@ a {
     grid-gap: 16px;
     border-bottom: 1px solid #393333;
 
+    &.--three-col {
+      grid-template-columns: 33% 33% 33%;
+    }
+
     & .grid-cell {
       padding: 34px 40px 44px;
     }
@@ -230,8 +234,14 @@ header {
 }
 
 #about {
+  background-position: center center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
                     url("https://images.unsplash.com/photo-1521321205814-9d673c65c167?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1440&q=80");
+}
+
+#about-extra {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+                    url("https://images.unsplash.com/photo-1519120126473-8be7aedcd6c6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1440&q=80");
 }
 
 .flex-container {
@@ -370,7 +380,9 @@ footer {
   }
 
   .about-body {
-    grid-gap: 0 !important;
-    grid-template-columns: auto !important;
+    &, &--three-col {
+      grid-gap: 0 !important;
+      grid-template-columns: auto !important;
+    }
   }
 }
