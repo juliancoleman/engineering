@@ -254,9 +254,12 @@ footer {
     }
   }
 
+  .hero-half {
+    margin-bottom: 0;
+  }
+
   .flex-container {
     flex-direction: column;
-    margin-top: 0;
 
     .flex-column {
       margin: 0 !important;
