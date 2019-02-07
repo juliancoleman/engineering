@@ -120,6 +120,10 @@ a {
   max-width: 1240px;
   margin: 0 auto;
 
+  &.about-body {
+    padding: 36px 24px;
+  }
+
   & .section-header {
     font-family: "Raleway";
   }
