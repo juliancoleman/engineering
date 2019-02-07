@@ -322,7 +322,12 @@ footer {
     margin-right: 8px;
     padding-top: 32px;
 
+    nav:first-of-type {
+      margin-bottom: 12px;
+    }
+
     & .social-icons {
+      margin-top: 0;
       display: inline-block;
     }
   }
