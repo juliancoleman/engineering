@@ -126,6 +126,10 @@ a {
     grid-template-rows: auto;
     grid-gap: 16px;
 
+    & .grid-cell {
+      padding: 34px 40px 44px;
+    }
+
     & .section-header {
       color: #393333;
       font-family: "Raleway";
