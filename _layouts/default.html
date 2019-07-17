@@ -23,16 +23,16 @@
     </main>
 
     {% if page.url != "/" %}
-      {% include footer.html %}
+    {% include footer.html %}
     {% endif %}
+
+    <script defer
+            src="https://use.fontawesome.com/releases/v5.7.1/js/all.js"
+            integrity="sha384-eVEQC9zshBn0rFj4+TU78eNA19HMNigMviK/PU/FFjLXqa/GKPgX58rvt5Z8PLs7"
+            crossorigin="anonymous">
+    </script>
+    <script src="https://raw.githubusercontent.com/w3c/IntersectionObserver/master/polyfill/intersection-observer.js" type="application/javascript"></script>
+    <script src="{{ '/assets/js/app.js' }}"></script>
   </body>
-
-  <script defer
-          src="https://use.fontawesome.com/releases/v5.7.1/js/all.js"
-          integrity="sha384-eVEQC9zshBn0rFj4+TU78eNA19HMNigMviK/PU/FFjLXqa/GKPgX58rvt5Z8PLs7"
-          crossorigin="anonymous">
-  </script>
-  <script src="{{ '/assets/js/app.js' }}"></script>
-
 
 </html>
