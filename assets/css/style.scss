@@ -301,6 +301,72 @@ header {
   }
 }
 
+.material-card {
+  padding: 0 !important;
+  background: #fff;
+  border-radius: 4px;
+  overflow: hidden;
+
+  .card--rich-media {
+    height: 194px;
+    background-color: #ccc;
+    overflow: hidden;
+
+    &.va-engineering,
+    &.orchestra,
+    &.foundationwm,
+    &.media-platform,
+    &.tefb {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 50% 0%;
+    }
+
+    &.va-engineering {
+      background-image: url("{{ '../images/videoamp-engineering.png' }}");
+    }
+
+    &.orchestra {
+      background-image: url("https://images.unsplash.com/photo-1465847899084-d164df4dedc6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=80");
+    }
+
+    &.foundationwm {
+      background-image: url("{{ '../images/foundationwm.png' }}");
+    }
+
+    &.media-platform {
+      background-image: url("{{ '../images/media-platform.png' }}");
+    }
+
+    &.tefb {
+      background-image: url("{{ '../images/tefb.png' }}");
+    }
+  }
+
+  .card--contents {
+    padding: 16px;
+
+    .card--title {
+      margin: 12.5px 0;
+      font-size: 16px;
+    }
+
+    .card--subtitle {
+      opacity: 0.6;
+      font-size: 12px;
+      font-weight: 500;
+    }
+  }
+
+  .card--actions {
+    padding-top: 28px;
+
+    a {
+      text-transform: unset;
+    }
+  }
+}
+
 footer {
   text-transform: uppercase;
   margin: 34px 40px 44px;
