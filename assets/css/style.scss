@@ -427,6 +427,10 @@ footer {
     & .social-icons {
       margin-top: 0;
       display: inline-block;
+
+      a {
+        display: inline-block;
+      }
     }
   }
 
