@@ -85,7 +85,7 @@ if (!el && !hero) {
   anchorReplaceClass("light", "dark");
   header.classList.add("active");
   header.classList.add("sticky");
-} else {
+} else if (el) {
   var ob = new IntersectionObserver(observeFn, opts);
   ob.observe(el);
 }
