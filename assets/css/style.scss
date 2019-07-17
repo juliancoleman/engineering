@@ -63,11 +63,13 @@ a {
   text-transform: uppercase;
   border-bottom: 1px solid transparent;
   transition: color 0.2s ease-out,
-  opacity 0.2s ease-out,
-  border-color 0.2s ease-out;
+              fill 0.2s ease-out,
+              opacity 0.2s ease-out,
+              border-color 0.2s ease-out;
 
   &.light {
     color: #dfdfdf;
+    fill: #dfdfdf;
 
     &:hover {
       color: #fff;
@@ -77,6 +79,7 @@ a {
 
   &.dark {
     color: #393333;
+    fill: #393333;
 
     &.contact {
       border: 1px solid #393333;
@@ -176,7 +179,10 @@ header {
     font-size: 18px;
     height: 18px;
     width: 18px;
-    // ! TODO: fill the icons white somehow
+
+    path {
+      fill: inherit;
+    }
   }
 
   .social-icons {
