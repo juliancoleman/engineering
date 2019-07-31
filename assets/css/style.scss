@@ -293,6 +293,10 @@ header {
       & p {
         line-height: 24px;
       }
+
+      & p.tech-used {
+        opacity: 0.5;
+      }
     }
 
     &:last-child {
